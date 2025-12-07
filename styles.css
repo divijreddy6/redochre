@@ -1,12 +1,12 @@
 :root {
-  --bg: #f3efe9;
-  --bg-strong: #e7e1d9;
-  --text: #18140f;
-  --muted: #5a5145;
-  --line: #d6cfc6;
-  --accent: #2f80ed;
-  --card: #ffffff;
-  --shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+  --bg: #050000;
+  --bg-strong: #0e0000;
+  --text: #ff6b6b;
+  --muted: #ff9ba1;
+  --line: #301010;
+  --accent: #ff1f3d;
+  --card: #110000;
+  --shadow: 0 18px 50px rgba(255, 50, 50, 0.12);
   --font: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -19,7 +19,9 @@
 body {
   margin: 0;
   font-family: var(--font);
-  background: var(--bg);
+  background: radial-gradient(circle at 30% 20%, rgba(255, 64, 64, 0.08), transparent 32%),
+    radial-gradient(circle at 70% 60%, rgba(255, 31, 61, 0.08), transparent 36%),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -58,6 +60,7 @@ a:focus-visible {
   padding: 24px;
   box-shadow: var(--shadow);
   position: relative;
+  backdrop-filter: blur(4px);
 }
 
 .sidebar h1 {
@@ -87,8 +90,8 @@ a:focus-visible {
 
 .side-nav a:hover,
 .side-nav a:focus-visible {
-  border-color: var(--line);
-  background: var(--bg);
+  border-color: var(--accent);
+  background: rgba(255, 31, 61, 0.08);
 }
 
 .contact-block {
@@ -168,7 +171,7 @@ a:focus-visible {
   padding: 16px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: var(--bg);
+  background: linear-gradient(135deg, rgba(255, 31, 61, 0.06), rgba(255, 107, 107, 0.04));
 }
 
 .project-meta h3 {
@@ -185,17 +188,17 @@ a:focus-visible {
 
 .project-thumb {
   border-radius: 16px;
-  background: linear-gradient(135deg, #cfc7bd, #f5f1ea);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(135deg, #330005, #66000f);
+  box-shadow: inset 0 0 0 1px rgba(255, 107, 107, 0.16);
   min-height: 140px;
 }
 
 .project-thumb.warm {
-  background: linear-gradient(135deg, #f0c7a4, #f5e7d6);
+  background: linear-gradient(135deg, #550010, #a00020);
 }
 
 .project-thumb.cool {
-  background: linear-gradient(135deg, #b4c7e8, #e8eef7);
+  background: linear-gradient(135deg, #3a0016, #820028);
 }
 
 .service-grid,
@@ -210,7 +213,7 @@ a:focus-visible {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 16px;
-  background: var(--bg);
+  background: linear-gradient(135deg, rgba(255, 31, 61, 0.05), rgba(255, 107, 107, 0.04));
 }
 
 .service h3,
@@ -243,7 +246,8 @@ a:focus-visible {
   border-radius: 12px;
   padding: 12px;
   font: inherit;
-  background: #fff;
+  background: #1a0000;
+  color: var(--text);
 }
 
 .field textarea {
@@ -257,21 +261,21 @@ a:focus-visible {
   padding: 12px 16px;
   border-radius: 10px;
   font-weight: 600;
-  border: 1px solid var(--text);
+  border: 1px solid var(--accent);
   cursor: pointer;
   text-decoration: none;
   transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
 }
 
 .btn.primary {
-  background: var(--text);
-  color: var(--bg);
+  background: var(--accent);
+  color: #0a0000;
 }
 
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-1px);
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 32px rgba(255, 31, 61, 0.28);
 }
 
 .btn.full {
