@@ -3,19 +3,19 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-const nav = document.querySelector(".nav");
-const toggle = document.querySelector(".nav-toggle");
+const menuToggle = document.getElementById("menuToggle");
+const sideNav = document.querySelector(".side-nav");
 
-if (nav && toggle) {
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
+if (menuToggle && sideNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = sideNav.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
+  sideNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
+      sideNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
     });
   });
 }
