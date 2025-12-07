@@ -2,401 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Noir Frame Post · Film Colour & Finishing</title>
+  <title>Studio Layout Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Noir Frame Post is a boutique film post-production studio specializing in colour grading, finishing and delivery for features, series and documentary work."
-  />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Optional: Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
     rel="stylesheet"
-  >
+  />
 </head>
-<body class="site">
-
-  <!-- SIDEBAR NAV (DESKTOP) / OVERLAY NAV (MOBILE) -->
-  <aside class="site-sidebar" aria-label="Primary navigation">
-    <div class="sidebar-inner">
-      <div>
-        <a href="#top" class="brand">
-          <span class="brand-mark"></span>
-          <span class="brand-text">
-            <span class="brand-name">Noir Frame Post</span>
-            <span class="brand-tagline">Colour & finishing for film</span>
-          </span>
-        </a>
-
-        <nav class="nav-main" aria-label="Sections">
-          <a href="#top">Home</a>
-          <a href="#work">Recent films</a>
-          <a href="#services">Services</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-
-      <div class="sidebar-footer">
-        <p class="sidebar-location">Toronto · Remote worldwide</p>
-        <p class="sidebar-email">hello@noirframepost.com</p>
-        <div class="sidebar-social" aria-label="Social links">
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Vimeo">VM</a>
-          <a href="#" aria-label="Letterboxd">LB</a>
-        </div>
-      </div>
-    </div>
-  </aside>
-
-  <!-- MOBILE HEADER -->
-  <header class="mobile-header">
-    <a href="#top" class="mobile-brand">Noir Frame Post</a>
-    <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-
-  <!-- MAIN CONTENT WRAPPER -->
-  <div class="site-main">
-
-    <!-- HERO -->
-    <header class="hero" id="top">
-      <div class="hero-inner container">
-        <div class="hero-copy">
-          <p class="hero-kicker">Boutique film post-production studio</p>
-          <h1>
-            Cinematic colour and finishing
-            <span class="hero-highlight">built around your story.</span>
-          </h1>
-          <p class="hero-lead">
-            Noir Frame Post partners with directors, DPs and producers to shape colour, protect performance
-            and deliver festival-ready masters across features, series and documentaries.
-          </p>
-          <div class="hero-actions">
-            <button class="btn btn-primary" data-showreel-open>
-              ▶ Watch showreel
-            </button>
-            <a href="#work" class="btn btn-ghost">
-              View recent films
-            </a>
-          </div>
-          <p class="hero-note">
-            In-suite and remote sessions · SDR & HDR pipelines · DCP, broadcast & streaming delivery.
-          </p>
-        </div>
-
-        <div class="hero-visual">
-          <figure class="hero-frame">
-            <!-- Placeholder image — replace with your own still / suite photo -->
-            <img
-              src="https://images.pexels.com/photos/6898851/pexels-photo-6898851.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="Colour grading suite with a large cinema display and control panel"
-            />
-            <figcaption>Placeholder frame · Replace with your own image</figcaption>
-          </figure>
-        </div>
-      </div>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top">Bridge Studio</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#studio">Studios</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </header>
 
-    <main>
-
-      <!-- RECENT FILMS -->
-      <section id="work" class="section section-work" aria-labelledby="work-heading">
-        <div class="container">
-          <header class="section-header">
-            <h2 id="work-heading">Recent films</h2>
-            <p>
-              A small selection of projects graded and finished at Noir Frame Post. Titles, directors and
-              production companies are placeholders you can replace with your own work.
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Film finishing studio</p>
+            <h1>Purpose-built rooms for colour, finishing, and delivery.</h1>
+            <p class="lede">
+              A lightweight layout inspired by bridgepostworks.com — clean lines, generous spacing,
+              and clear calls to action without reusing their specific text or imagery.
             </p>
-          </header>
-
-          <div class="films-grid">
-            <article class="film-card">
-              <div class="film-thumb">
-                <img
-                  src="https://images.pexels.com/photos/6898859/pexels-photo-6898859.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Placeholder still from the film 'Midnight Transit'"
-                />
-              </div>
-              <div class="film-body">
-                <h3>Midnight Transit</h3>
-                <p class="film-meta">Feature · 4K HDR · 108 min</p>
-                <p class="film-text">
-                  A nocturnal road movie following a night-shift driver across a sleeping city. Grading focused on
-                  natural skin tones in mixed light and a subtle separation between street sodium and interior spaces.
-                </p>
-                <ul class="film-tags">
-                  <li>Colour design</li>
-                  <li>Online & finishing</li>
-                  <li>DCP mastering</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="film-card">
-              <div class="film-thumb">
-                <img
-                  src="https://images.pexels.com/photos/6898853/pexels-photo-6898853.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Placeholder still from the film 'Daylight Left'"
-                />
-              </div>
-              <div class="film-body">
-                <h3>Daylight Left</h3>
-                <p class="film-meta">Documentary · 4×52 min series</p>
-                <p class="film-text">
-                  A quiet, observational series about a small harbour town in the off-season. We created a soft,
-                  washed-winter palette that preserved texture in overcast skies and interiors.
-                </p>
-                <ul class="film-tags">
-                  <li>Series look bible</li>
-                  <li>HDR & SDR trims</li>
-                  <li>Platform delivery</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="film-card">
-              <div class="film-thumb">
-                <img
-                  src="https://images.pexels.com/photos/6898854/pexels-photo-6898854.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Placeholder still from the film 'Glass Echoes'"
-                />
-              </div>
-              <div class="film-body">
-                <h3>Glass Echoes</h3>
-                <p class="film-meta">Short · festival circuit</p>
-                <p class="film-text">
-                  A contained drama set entirely in a rehearsal room. The grade leaned into reflections and lens
-                  flares while protecting the delicate contrast between rehearsal and performance.
-                </p>
-                <ul class="film-tags">
-                  <li>Festival DCPs</li>
-                  <li>Trailer versioning</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="film-card">
-              <div class="film-thumb">
-                <img
-                  src="https://images.pexels.com/photos/6898852/pexels-photo-6898852.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Placeholder still from the commercial 'North Line'"
-                />
-              </div>
-              <div class="film-body">
-                <h3>North Line</h3>
-                <p class="film-meta">Commercial · multi-platform</p>
-                <p class="film-text">
-                  A performance-driven campaign for a rail brand. We delivered multiple aspect ratios and durations
-                  from a single hero grade to keep colours consistent across platforms.
-                </p>
-                <ul class="film-tags">
-                  <li>Commercial finishing</li>
-                  <li>Social cut-downs</li>
-                </ul>
-              </div>
-            </article>
+            <div class="hero-actions">
+              <a class="btn primary" href="#contact">Book a session</a>
+              <a class="btn ghost" href="#work">See recent work</a>
+            </div>
           </div>
-
-          <p class="section-footnote">
-            Want a full filmography or technical breakdown? <a href="#contact">Get in touch</a> for a detailed credit list.
-          </p>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="image-placeholder"></div>
+            <div class="image-placeholder offset"></div>
+          </div>
         </div>
       </section>
 
-      <!-- SERVICES -->
-      <section id="services" class="section section-services" aria-labelledby="services-heading">
-        <div class="container">
-          <header class="section-header">
-            <h2 id="services-heading">Services</h2>
-            <p>
-              From early tests to final masters, we can join at any stage. Below is an overview of how we typically work.
+      <section id="services" class="section pad-bottom">
+        <div class="section-header">
+          <h2>Capabilities</h2>
+          <p>Three concise pillars mirrored from the reference layout.</p>
+        </div>
+        <div class="pillars">
+          <article class="pillar">
+            <h3>Colour</h3>
+            <p>Dedicated grading suites, calibrated displays, and flexible looks built with directors and DPs.</p>
+          </article>
+          <article class="pillar">
+            <h3>Finishing</h3>
+            <p>Conform, online, and mastering workflows designed for fast approvals and multi-version deliveries.</p>
+          </article>
+          <article class="pillar">
+            <h3>Delivery</h3>
+            <p>Festival-ready DCPs, broadcast packages, and streaming specs with clear documentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section alt pad">
+        <div class="section-header">
+          <h2>Selected work</h2>
+          <p>Minimal cards echo the staggered gallery on the reference site.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-image"></div>
+            <div class="work-meta">
+              <h3>Project title</h3>
+              <p>Brief descriptor of the grade, finish, or delivery.</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-image"></div>
+            <div class="work-meta">
+              <h3>Project title</h3>
+              <p>Brief descriptor of the grade, finish, or delivery.</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-image"></div>
+            <div class="work-meta">
+              <h3>Project title</h3>
+              <p>Brief descriptor of the grade, finish, or delivery.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="studio" class="section pad-bottom">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Studios</p>
+            <h2>Flexible rooms for online, grading, and reviews.</h2>
+            <p class="lede">
+              Descriptive text and callouts sit in a two-column grid to match the reference site’s
+              rhythm and white space.
             </p>
-          </header>
-
-          <div class="services-grid">
-            <article class="service">
-              <h3>Colour grading</h3>
-              <p>
-                Look development, show LUTs and final grading for features, series, docs and shorts. We’re comfortable
-                working from offline timelines in a range of NLEs and camera formats.
-              </p>
-              <ul>
-                <li>Look sessions with directors and DPs</li>
-                <li>Hero frames & quick tests before shoot</li>
-                <li>SDR grading with HDR options on request</li>
-              </ul>
-            </article>
-
-            <article class="service">
-              <h3>Online & finishing</h3>
-              <p>
-                Conform, clean-up and finishing passes aimed at making the picture feel invisible — in the best way.
-                We keep changes documented so editorial and sound always know what has shifted.
-              </p>
-              <ul>
-                <li>Conform from offline to grading timelines</li>
-                <li>Minor VFX, beauty work & paint fixes</li>
-                <li>Text, titles & versioning for multiple deliveries</li>
-              </ul>
-            </article>
-
-            <article class="service">
-              <h3>Mastering & delivery</h3>
-              <p>
-                Mastering for festivals, broadcast and platforms with an emphasis on clarity: you leave with a set of
-                files and a delivery sheet that explain exactly what each version is for.
-              </p>
-              <ul>
-                <li>DCP for festival and theatrical screenings</li>
-                <li>Platform-ready packages and broadcast specs</li>
-                <li>Archival exports and frame-accurate reference files</li>
-              </ul>
-            </article>
+          </div>
+          <div class="studio-details">
+            <div class="detail">
+              <h3>Suite A</h3>
+              <p>Primary colour room with dual calibrated displays and client seating.</p>
+            </div>
+            <div class="detail">
+              <h3>Suite B</h3>
+              <p>Online/finishing bay with remote review support.</p>
+            </div>
+            <div class="detail">
+              <h3>Review lounge</h3>
+              <p>Shared space for screenings, collaboration, and relaxed feedback rounds.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- NEWS -->
-      <section id="news" class="section section-news" aria-labelledby="news-heading">
-        <div class="container">
-          <header class="section-header">
-            <h2 id="news-heading">News & screenings</h2>
-            <p>
-              Placeholder updates you can swap for real festival selections, launch dates, press mentions or studio announcements.
-            </p>
-          </header>
-
-          <ul class="news-list">
-            <li class="news-item">
-              <p class="news-meta">JAN · 2025</p>
-              <h3 class="news-title">“Midnight Transit” wins Audience Award at Harbour Lights Film Festival</h3>
-              <p class="news-text">
-                The feature premiered in the main competition, with Noir Frame Post providing colour, finishing and DCP masters.
-              </p>
-              <a href="#" class="news-link">Placeholder link to press article →</a>
-            </li>
-
-            <li class="news-item">
-              <p class="news-meta">NOV · 2024</p>
-              <h3 class="news-title">Series “Daylight Left” debuts on a major streaming platform</h3>
-              <p class="news-text">
-                Our team handled series-wide look development and HDR trims across four hour-long episodes.
-              </p>
-              <a href="#" class="news-link">Placeholder link to announcement →</a>
-            </li>
-
-            <li class="news-item">
-              <p class="news-meta">SEP · 2024</p>
-              <h3 class="news-title">New grading suite opened with remote review pipeline</h3>
-              <p class="news-text">
-                The studio now supports calibrated remote sessions, allowing collaborators to review from anywhere with
-                consistent monitoring.
-              </p>
-              <a href="#" class="news-link">Placeholder link to studio update →</a>
-            </li>
-          </ul>
+      <section id="contact" class="section alt pad">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Simple form block anchored to the bottom of the layout like the reference.</p>
         </div>
+        <form class="contact-form" novalidate>
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label class="field">
+            <span>Project details</span>
+            <textarea name="details" rows="4" placeholder="Share format, runtime, and timelines"></textarea>
+          </label>
+          <button type="submit" class="btn primary full">Send message</button>
+          <p class="form-note">This is a static demo form for layout purposes.</p>
+        </form>
       </section>
-
-      <!-- CONTACT + NEWSLETTER -->
-      <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
-        <div class="container contact-grid">
-          <div class="contact-column">
-            <header class="section-header contact-header">
-              <h2 id="contact-heading">Contact</h2>
-              <p>
-                For schedules, quotes or to share work-in-progress cuts, send a short note with format, runtime and
-                rough timelines. We’ll reply with a clear plan and options.
-              </p>
-            </header>
-
-            <dl class="contact-details">
-              <div>
-                <dt>Email</dt>
-                <dd><a href="mailto:hello@noirframepost.com">hello@noirframepost.com</a></dd>
-              </div>
-              <div>
-                <dt>Phone</dt>
-                <dd><a href="tel:+15551234567">+1 (555) 123-4567</a></dd>
-              </div>
-              <div>
-                <dt>Studio</dt>
-                <dd>
-                  Placeholder studio address<br />
-                  Toronto, Ontario · Canada
-                </dd>
-              </div>
-            </dl>
-          </div>
-
-          <div class="contact-column">
-            <header class="section-header contact-header">
-              <h2>Newsletter</h2>
-              <p>
-                An occasional email with new work, screenings and technical notes. No automated sequences, just
-                hand-written updates a few times a year.
-              </p>
-            </header>
-
-            <form class="newsletter-form" id="newsletter-form" novalidate>
-              <label class="field">
-                <span class="field-label">Email address</span>
-                <input
-                  type="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                  placeholder="you@example.com"
-                />
-              </label>
-              <button type="submit" class="btn btn-primary">
-                Join newsletter
-              </button>
-              <p class="form-message" id="newsletter-message" aria-live="polite"></p>
-            </form>
-          </div>
-        </div>
-      </section>
-
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Noir Frame Post. All rights reserved.</p>
-        <p class="footer-credits">
-          Site design & build · Placeholder credit — replace with your own name or studio.
-        </p>
-      </div>
+    <footer class="footer">
+      <p>© <span id="year"></span> Bridge Studio layout demo.</p>
+      <p>Built for reference without borrowing original assets.</p>
     </footer>
-  </div>
-
-  <!-- SHOWREEL MODAL -->
-  <div class="modal" data-showreel-modal aria-hidden="true">
-    <div class="modal-backdrop" data-showreel-close></div>
-    <div class="modal-dialog" role="dialog" aria-modal="true" aria-label="Showreel">
-      <button class="modal-close" type="button" data-showreel-close aria-label="Close showreel">
-        ✕
-      </button>
-      <div class="modal-body">
-        <!-- Replace the src with your own showreel link -->
-        <div class="video-frame">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Showreel placeholder"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
   </div>
 
   <script src="script.js"></script>
