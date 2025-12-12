@@ -34,20 +34,23 @@ body{
 }
 .masthead__inner{
   height:var(--mast);
-  padding:18px 18px 14px;
+  padding:20px 22px 18px;
   display:flex;
   flex-direction:column;
-  align-items:flex-end;
+  align-items:center;
   justify-content:center;
+  max-width:1200px;
+  margin:0 auto;
 }
 .masthead__title{
   color:var(--red);
   font-weight:700;
   letter-spacing:.12em;
   text-transform:uppercase;
-  font-size:44px;             /* BIG */
-  line-height:1;
-  text-align:right;
+  font-size:46px;             /* BIG */
+  line-height:1.04;
+  text-align:center;
+  width:100%;
 }
 
 /* Layout */
