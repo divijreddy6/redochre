@@ -1,0 +1,165 @@
+.cards{
+  display:flex;
+  flex-direction:column;
+  gap: clamp(18px, 2.4vw, 34px);
+}
+
+.cards{
+  width: 100%;
+}
+
+.videoWrap{
+  width: 100%;
+}
+
+#work.section{
+  padding-left: 0;
+  padding-right: 0;
+}
+.videoWrap{
+  margin: 0;
+}
+
+.card{
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.card__top{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.card__title{
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(255,255,255,.90);
+}
+.card__meta{
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.videoWrap{
+  position: relative;
+  background: #000;                 /* blends into site */
+  overflow: hidden;                 /* hides overlay gradients */
+  border: none;                     /* ✅ no border */
+  border-radius: 0;                 /* ✅ no rounded border */
+  padding: 0;                       /* ✅ no frame padding */
+  box-shadow: 0 26px 80px rgba(0,0,0,.55); /* embedded depth */
+}
+
+.videoWrap::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(120% 90% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%),
+    linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,0) 45%),
+    linear-gradient(to bottom, rgba(0,0,0,.32), rgba(0,0,0,0) 40%);
+  opacity: .95;
+}
+
+.overlayTitle{
+  position:absolute;
+  top: clamp(14px, 2vw, 22px);
+  right: clamp(14px, 2vw, 22px);
+  z-index: 5;
+
+  color: var(--red);                 /* your red */
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: clamp(28px, 4.2vw, 72px);
+  text-shadow: 0 10px 40px rgba(0,0,0,.65);
+}
+
+.overlayView{
+  position:absolute;
+  left: clamp(14px, 2vw, 22px);
+  bottom: clamp(14px, 2vw, 22px);
+  z-index: 5;
+
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: clamp(18px, 2.6vw, 44px);
+  text-shadow: 0 10px 40px rgba(0,0,0,.65);
+}
+
+
+.video{
+  width: 100%;
+  height: clamp(240px, 70vh, 900px); /* ✅ scales with screen */
+  display:block;
+  object-fit: cover;
+  background: #000;
+  border: none;
+  outline: none;
+}
+
+.projectLink{
+  position:absolute;
+  inset:0;
+  z-index: 4;
+}
+
+.card{
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+.card__top{
+  border-bottom: none;
+  padding: 10px 4px 12px;
+}
+
+
+
+.vignette{
+  pointer-events:none;
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(90% 90% at 50% 40%, rgba(0,0,0,0) 35%, rgba(0,0,0,.55) 100%);
+  opacity: .75;
+}
+
+.overlay{
+  pointer-events:none;
+  position:absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 16px;
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  gap: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,0));
+}
+
+.badge{
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  padding: 8px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: rgba(255,255,255,.92);
+}
+
+.state{
+  color: rgba(255,255,255,.75);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}

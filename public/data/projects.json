@@ -1,0 +1,17 @@
+{
+  "grade-001": {
+    "title": "Project One",
+    "year": "2025",
+    "client": "Brand / Film",
+    "category": "Commercial",
+    "description": "A clean, modern grade with warm skin tones and deep blacks. Designed for theatrical + social cutdowns.",
+    "credits": [
+      { "k": "Colorist", "v": "RedOchre Post Works" },
+      { "k": "DP", "v": "Name Here" },
+      { "k": "Director", "v": "Name Here" }
+    ],
+    "stills": [
+      "/posters/grade_001.jpg"
+    ]
+  }
+}

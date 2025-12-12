@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project — RedOchre Post Works</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/video-feed.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar__title">REDOCHRE POST WORKS</div>
+    <a class="btn btn--ghost" href="/">Back</a>
+  </header>
+
+  <main class="main main--full">
+    <section class="section">
+      <div class="projectHead">
+        <h1 class="projectTitle" id="pTitle">Loading…</h1>
+        <div class="projectMeta" id="pMeta"></div>
+        <p class="projectDesc" id="pDesc"></p>
+      </div>
+
+      <div class="projectVideoShell">
+        <video id="pVideo" class="projectVideo" playsinline muted loop></video>
+      </div>
+
+      <div class="projectGrid">
+        <div class="projectCard">
+          <div class="projectCard__title">Credits</div>
+          <div id="pCredits" class="projectList"></div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectCard__title">Stills</div>
+          <div id="pStills" class="stills"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> RedOchre Post Works</div>
+      <div class="small">Project page</div>
+    </footer>
+  </main>
+
+  <script type="module" src="/js/project.js"></script>
+</body>
+</html>

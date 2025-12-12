@@ -1,98 +1,162 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>REDOCHRE POST WORKS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="RedOchre Post Works — Color grading studio. Video-first portfolio." />
+  <title>RedOchre Post Works</title>
 
-  <!-- If you have the exact font file, drop it in /public/fonts and use @font-face in CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/video-feed.css" />
 </head>
 
 <body>
-  <!-- BIG sticky title -->
-  <header class="masthead">
-    <div class="masthead__inner">
-      <div class="masthead__badge">Redochre Post Works</div>
-      <div class="masthead__title" aria-label="Bold short and long from left to right">
-        <span class="masthead__title-short">SHORT</span>
-        <span class="masthead__title-arrow">→</span>
-        <span class="masthead__title-long">LONG</span>
-        <span class="masthead__title-tag">BOLD FROM LEFT TO RIGHT</span>
-      </div>
-      <p class="masthead__subtitle">Color-led finishing, thoughtful QC, and editorial polish for stories that move from the opening frame to the final delivery.</p>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Side nav (fixed) -->
+  <aside class="sidenav" aria-label="Site navigation">
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__foot">
+      <button class="btn btn--ghost" id="soundToggle" type="button" aria-pressed="false">
+        Enable Sound
+      </button>
+      <div class="hint">Scroll → the video in view plays.</div>
     </div>
-  </header>
+  </aside>
 
-  <div class="layout">
-    <!-- Fixed left menu -->
-    <aside class="side">
-      <nav class="sidenav">
-        <a class="sidenav__link is-active" href="#work">Work</a>
-        <a class="sidenav__link" href="#services">Services</a>
-        <a class="sidenav__link" href="#contact">Contact</a>
-      </nav>
+  <main class="main">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="topbar__title">REDOCHRE POST WORKS</div>
 
-      <div class="sidecard">
-        <div class="sidecard__kicker">Feed</div>
-        <div class="sidecard__line">
-          <span>Items</span>
-          <strong id="statItems">0</strong>
-        </div>
-        <div class="sidecard__line">
-          <span>Status</span>
-          <strong id="statStatus">Loading</strong>
-        </div>
-        <div class="sidecard__hint">
-          Add videos into <code>/public/videos</code>. Newest files appear first.
+      <button class="btn btn--primary" id="openShowreel" type="button">
+        Showreel
+      </button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero reveal">
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          Cinematic color.<br/>
+          Quiet confidence.
+        </h1>
+        <p class="hero__sub">
+          A video-first archive of our grades. Upload files to <span class="mono">/public/videos</span>
+          and the feed updates automatically.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--ghost" href="#work">View Work</a>
+          <button class="btn btn--ghost" id="openShowreel2" type="button">Play Showreel</button>
         </div>
       </div>
-    </aside>
+    </section>
 
-    <!-- Scrolling content -->
-    <main class="main" id="work">
-      <section class="intro">
-        <h1 class="intro__h">Selected Works</h1>
-        <p class="intro__p">A cinematic grid with red-hot accents, smooth motion previews, and a curated feed that keeps recent deliveries in reach.</p>
-      </section>
-
-      <section class="gallery" id="gallery"></section>
-
-      <div class="load" id="loader">
-        <span class="load__dot"></span>
-        <span class="load__text">Loading more…</span>
+    <!-- Work -->
+    <section class="section reveal" id="work">
+      <div class="section__head">
+        <h2 class="section__title">Recent Work</h2>
+        <div class="section__meta" id="feedStatus">Loading…</div>
       </div>
+      <div class="cards" id="cards"></div>
+    </section>
 
-      <section class="section" id="services">
+    <!-- Services (BIG chess tiles, no gaps) -->
+    <section class="section reveal" id="services">
+      <div class="section__head">
         <h2 class="section__title">Services</h2>
-        <p class="section__text">Color • Dailies • Conform • QC • IMF/DCP • Versioning</p>
-      </section>
-
-      <section class="section" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <p class="section__text">hello@redochrepostworks.com</p>
-      </section>
-
-      <footer class="footer">
-        <div class="footer__line"></div>
-        <div class="footer__copy">© <span id="year"></span> REDOCHRE POST WORKS</div>
-      </footer>
-    </main>
-  </div>
-
-  <!-- Modal player -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal__bg" data-close="true"></div>
-    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Video player">
-      <button class="modal__close" type="button" data-close="true" aria-label="Close">✕</button>
-      <div class="modal__head">
-        <div class="modal__title" id="modalTitle">Title</div>
-        <div class="modal__meta" id="modalMeta">Meta</div>
+        <div class="section__meta">End-to-end finishing with a clean pipeline.</div>
       </div>
-      <video id="modalVideo" class="modal__video" controls playsinline></video>
+
+      <div class="tiles">
+        <div class="tile">Color Grading (HDR/SDR)</div>
+        <div class="tile">Look Development</div>
+        <div class="tile">Conform & Finishing</div>
+        <div class="tile">QC & Deliverables</div>
+      </div>
+    </section>
+
+    <!-- About (one big embedded tile) -->
+    <section class="section reveal" id="about">
+      <div class="section__head">
+        <h2 class="section__title">About</h2>
+        <div class="section__meta">Taste-forward, detail-obsessed.</div>
+      </div>
+
+      <div class="aboutTile">
+        <div class="aboutTile__inner">
+          <div class="aboutTitle">About</div>
+          <p class="aboutText">
+            We’re a post studio built around color. Minimal process, maximum clarity:
+            consistent looks, clean output, and dependable delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (BIG chess tiles, no gaps) -->
+    <section class="section reveal" id="contact">
+      <div class="section__head">
+        <h2 class="section__title">Contact</h2>
+        <div class="section__meta">Bookings & inquiries.</div>
+      </div>
+
+      <div class="contact">
+        <div class="contact__line">
+          <span class="k">Email</span>
+          <span class="mono">hello@redochrepostworks.com</span>
+        </div>
+
+        <div class="contact__line">
+          <span class="k">Phone</span>
+          <span class="mono">+1 (000) 000-0000</span>
+        </div>
+
+        <div class="contact__line">
+          <span class="k">Location</span>
+          <span class="mono">Toronto</span>
+        </div>
+
+        <div class="contact__line">
+          <span class="k">Instagram</span>
+          <span class="mono">@redochrepostworks</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> RedOchre Post Works</div>
+      <div class="small">Video-first • Scroll-play • Minimal</div>
+    </footer>
+  </main>
+
+  <!-- Showreel modal -->
+  <div class="modal" id="showreelModal" aria-hidden="true" role="dialog" aria-label="Showreel">
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel">
+      <div class="modal__top">
+        <div class="modal__title">Showreel</div>
+        <button class="btn btn--ghost" type="button" data-close="1">Close</button>
+      </div>
+      <video id="showreelVideo" class="modal__video" playsinline controls preload="metadata" muted></video>
+      <div class="modal__note small">
+        Tip: put <span class="mono">showreel.mp4</span> inside <span class="mono">/public/videos</span>.
+      </div>
     </div>
   </div>
 
-  <script src="./js/app.js"></script>
+  <script type="module" src="/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Studio Name | Post Production</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">REDOCHRE POST WORKS</div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#team">Team</a>
+      <a href="#services">Services</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#work-with-us" class="nav-cta">Work with us</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">
+        Independent post-production studio for filmmakers worldwide.
+      </p>
+      <button class="btn-primary" id="playShowreel">Play Showreel</button>
+      <div class="hero-social">
+        <span>Follow us on</span>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT FILMS -->
+  <section id="work" class="section">
+    <div class="section-header">
+      <h2>Our Recent Films</h2>
+    </div>
+    <div class="grid grid-films">
+      <!-- Each film card -->
+      <article class="film-card">
+        <div class="film-thumb"></div>
+        <div class="film-info">
+          <h3>Film Title One</h3>
+          <button class="btn-outline">View</button>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-thumb"></div>
+        <div class="film-info">
+          <h3>Film Title Two</h3>
+          <button class="btn-outline">View</button>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-thumb"></div>
+        <div class="film-info">
+          <h3>Film Title Three</h3>
+          <button class="btn-outline">View</button>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-thumb"></div>
+        <div class="film-info">
+          <h3>Film Title Four</h3>
+          <button class="btn-outline">View</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="section-header">
+      <h2>About</h2>
+    </div>
+    <p class="section-text">
+      Write a short, original description of your company here. Describe your
+      focus, experience, and what makes your post-production workflows unique.
+    </p>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section">
+    <div class="section-header">
+      <h2>Team</h2>
+    </div>
+    <div class="grid grid-team">
+      <article class="team-card">
+        <div class="team-photo"></div>
+        <h3>Name One</h3>
+        <p>Colorist</p>
+      </article>
+      <article class="team-card">
+        <div class="team-photo"></div>
+        <h3>Name Two</h3>
+        <p>Online Editor</p>
+      </article>
+      <article class="team-card">
+        <div class="team-photo"></div>
+        <h3>Name Three</h3>
+        <p>Post Supervisor</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="section-header">
+      <h2>Services</h2>
+    </div>
+    <ul class="services-list">
+      <li>Color grading for feature films and series.</li>
+      <li>Dailies and editorial workflows.</li>
+      <li>Finishing, mastering, and deliveries.</li>
+      <li>DCP and IMF creation.</li>
+    </ul>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" class="section">
+    <div class="section-header">
+      <h2>News</h2>
+    </div>
+    <div class="news-list">
+      <article class="news-item">
+        <h3>News headline one</h3>
+        <p class="news-meta">2025-01-31</p>
+      </article>
+      <article class="news-item">
+        <h3>News headline two</h3>
+        <p class="news-meta">2025-01-17</p>
+      </article>
+      <article class="news-item">
+        <h3>News headline three</h3>
+        <p class="news-meta">2025-01-10</p>
+      </article>
+    </div>
+    <div class="pagination">
+      <button class="page-btn">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="section-header">
+      <h2>Contact</h2>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- WORK WITH US -->
+  <section id="work-with-us" class="section">
+    <div class="section-header">
+      <h2>Work with us</h2>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Project / Company" />
+      <textarea placeholder="Tell us about your project" rows="4"></textarea>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- NEWSLETTER + FOOTER -->
+  <footer class="site-footer">
+    <div class="newsletter">
+      <p>Subscribe to our newsletter</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email" required />
+        <button type="submit" class="btn-outline">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-meta">
+      <p>© StudioName. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Showreel modal -->
+  <div class="modal" id="showreelModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body">
+        <!-- Replace with your embed -->
+        <p>Showreel video goes here (embed from Vimeo/YouTube).</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
