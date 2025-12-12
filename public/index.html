@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REDOCHRE POST WORKS</title>
+
+  <!-- Close-to-Bridge “single typeface” vibe (free + premium looking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- If you have the exact font file, drop it in /public/fonts and use @font-face in CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- BIG sticky title -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="masthead__title">REDOCHRE POST WORKS</div>
+      <div class="masthead__sub">Colour • Editorial • Finishing • Deliverables</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Fixed left menu -->
+    <aside class="side">
+      <nav class="sidenav">
+        <a class="sidenav__link is-active" href="#work">Work</a>
+        <a class="sidenav__link" href="#services">Services</a>
+        <a class="sidenav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="sidecard">
+        <div class="sidecard__kicker">Feed</div>
+        <div class="sidecard__line">
+          <span>Items</span>
+          <strong id="statItems">0</strong>
+        </div>
+        <div class="sidecard__line">
+          <span>Status</span>
+          <strong id="statStatus">Loading</strong>
+        </div>
+        <div class="sidecard__hint">
+          Add videos into <code>/public/videos</code>. Newest files appear first.
+        </div>
+      </div>
+    </aside>
+
+    <!-- Scrolling content -->
+    <main class="main" id="work">
+      <section class="intro">
+        <h1 class="intro__h">Selected Works</h1>
+        <p class="intro__p">
+          A clean white canvas with a strong red identity and an editorial video feed.
+        </p>
+      </section>
+
+      <section class="gallery" id="gallery"></section>
+
+      <div class="load" id="loader">
+        <span class="load__dot"></span>
+        <span class="load__text">Loading more…</span>
+      </div>
+
+      <section class="section" id="services">
+        <h2 class="section__title">Services</h2>
+        <p class="section__text">Color • Dailies • Conform • QC • IMF/DCP • Versioning</p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__text">hello@redochrepostworks.com</p>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__copy">© <span id="year"></span> REDOCHRE POST WORKS</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Modal player -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__bg" data-close="true"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="modal__close" type="button" data-close="true" aria-label="Close">✕</button>
+      <div class="modal__head">
+        <div class="modal__title" id="modalTitle">Title</div>
+        <div class="modal__meta" id="modalMeta">Meta</div>
+      </div>
+      <video id="modalVideo" class="modal__video" controls playsinline></video>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
