@@ -20,7 +20,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family:"Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-family:"Helvetica Neue Condensed Bold", "Helvetica Neue LT Pro Condensed", "Helvetica Neue", Arial, sans-serif;
   background:var(--bg);
   color:var(--ink);
 }
@@ -37,8 +37,8 @@ body{
   padding:18px 18px 14px;
   display:flex;
   flex-direction:column;
+  align-items:flex-end;
   justify-content:center;
-  gap:10px;
 }
 .masthead__title{
   color:var(--red);
@@ -47,12 +47,7 @@ body{
   text-transform:uppercase;
   font-size:44px;             /* BIG */
   line-height:1;
-}
-.masthead__sub{
-  color:var(--muted);
-  font-size:12px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
+  text-align:right;
 }
 
 /* Layout */
