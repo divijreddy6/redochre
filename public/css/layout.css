@@ -402,3 +402,5 @@
     font-size: clamp(28px, 7vw, 64px);
   }
 }
+
+.hero{ display:none !important; }
